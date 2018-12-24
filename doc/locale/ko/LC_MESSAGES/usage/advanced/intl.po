@@ -3,162 +3,203 @@
 # This file is distributed under the same license as the Sphinx package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx 1.8.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 15:36+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-12-24 16:15+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../usage/advanced/intl.rst:4
 msgid "Internationalization"
-msgstr ""
+msgstr "국제화"
 
 #: ../../usage/advanced/intl.rst:8
 msgid ""
-"Complementary to translations provided for Sphinx-generated messages such"
-" as navigation bars, Sphinx provides mechanisms facilitating *document* "
+"Complementary to translations provided for Sphinx-generated messages such as "
+"navigation bars, Sphinx provides mechanisms facilitating *document* "
 "translations in itself.  See the :ref:`intl-options` for details on "
 "configuration."
 msgstr ""
+"네비게이션 바처럼 스핑크스가 생성하는 메세지에 제공되는 번역을 보완하기 위해 "
+"Sphinx는 *문서* 번역 메커니즘을 내장하고 있다. 설정에 대한 자세한 사항은 :ref:"
+"`intl-options`\\ 를 참고하라."
 
 #: ../../usage/advanced/intl.rst:15
 msgid ""
-"Workflow visualization of translations in Sphinx.  (The stick-figure is "
-"taken from an `XKCD comic <https://xkcd.com/779/>`_.)"
+"Workflow visualization of translations in Sphinx.  (The stick-figure is taken "
+"from an `XKCD comic <https://xkcd.com/779/>`_.)"
 msgstr ""
+"스핑크스 번역 작업 흐름 시각화. (`XKCD comic <http://xkcd.com/779/>`_\\ 에서 "
+"인용.)"
 
 #: ../../usage/advanced/intl.rst:22
 msgid "Sphinx internationalization details"
-msgstr ""
+msgstr "Sphinx 국제화 세부 사항"
 
 #: ../../usage/advanced/intl.rst:24
 msgid ""
 "**gettext** [1]_ is an established standard for internationalization and "
-"localization.  It naively maps messages in a program to a translated "
-"string. Sphinx uses these facilities to translate whole documents."
+"localization.  It naively maps messages in a program to a translated string. "
+"Sphinx uses these facilities to translate whole documents."
 msgstr ""
+"**gettext** [1]_\\ 는 국제화(internationalization)와 지역화(localization)를 위"
+"한 확정된 표준이다. 단순히 프로그램에 있는 메세지를 번역 문자열로 대치한다. "
+"Sphinx는 모든 문서를 번역할 때 이 기능을 사용한다."
 
 #: ../../usage/advanced/intl.rst:28
 msgid ""
-"Initially project maintainers have to collect all translatable strings "
-"(also referred to as *messages*) to make them known to translators.  "
-"Sphinx extracts these through invocation of ``sphinx-build -b gettext``."
+"Initially project maintainers have to collect all translatable strings (also "
+"referred to as *messages*) to make them known to translators.  Sphinx "
+"extracts these through invocation of ``sphinx-build -b gettext``."
 msgstr ""
+"처음에 프로젝트 관리자는 번역기에 알려줄 수 있도록 번역가능한 모든 문자열(또"
+"는 메세지)을 수집해야한다. 스핑크스는 ``sphinx-build -b gettext``\\ 를 실행해"
+"서 문자열을 추출한다."
 
 #: ../../usage/advanced/intl.rst:32
 msgid ""
-"Every single element in the doctree will end up in a single message which"
-" results in lists being equally split into different chunks while large "
+"Every single element in the doctree will end up in a single message which "
+"results in lists being equally split into different chunks while large "
 "paragraphs will remain as coarsely-grained as they were in the original "
 "document.  This grants seamless document updates while still providing a "
 "little bit of context for translators in free-text passages.  It is the "
-"maintainer's task to split up paragraphs which are too large as there is "
-"no sane automated way to do that."
+"maintainer's task to split up paragraphs which are too large as there is no "
+"sane automated way to do that."
 msgstr ""
+"독트리(doctree)에 있는 각각의 단일 요소는 단일 메세지가 되고 거의 비슷한 크기"
+"로 분리된 리스트를 이룬다. 하지만 큰 단락들은 원본 문서에서처럼 큰 덩어리로 남"
+"아있게 된다.\n"
+"이렇게 하면 번역자에게 텍스트를 전달할 때 문맥을 약간이라도 전달할 수 있으면서"
+"도 매끄럽게 문서를 갱신할 수 있다.\n"
+"한 문단이 너무 크면 자동으로 잘 분리할 수 없기 때문에 관리자가 직접 문단을 나"
+"누어 주어야 한다."
 
 #: ../../usage/advanced/intl.rst:40
 msgid ""
-"After Sphinx successfully ran the "
-":class:`~sphinx.builders.gettext.MessageCatalogBuilder` you will find a "
-"collection of ``.pot`` files in your output directory.  These are "
-"**catalog templates** and contain messages in your original language "
-"*only*."
+"After Sphinx successfully ran the :class:`~sphinx.builders.gettext."
+"MessageCatalogBuilder` you will find a collection of ``.pot`` files in your "
+"output directory.  These are **catalog templates** and contain messages in "
+"your original language *only*."
 msgstr ""
+"Sphinx가 성공적으로 :class:`~sphinx.builders.gettext.MessageCatalogBuilder`\\ "
+"를 실행하면 출력 디렉토리에 ``.pot`` 파일들이 있는 것을 볼 수 있다. 이것은 **"
+"카탈로그 템플릿**\\ 으로 원본 언어\\ **로만** 된 메세지를 포함하고 있다."
 
 #: ../../usage/advanced/intl.rst:45
 msgid ""
-"They can be delivered to translators which will transform them to ``.po``"
-" files --- so called **message catalogs** --- containing a mapping from "
-"the original messages to foreign-language strings."
+"They can be delivered to translators which will transform them to ``.po`` "
+"files --- so called **message catalogs** --- containing a mapping from the "
+"original messages to foreign-language strings."
 msgstr ""
+"이 템플릿을 번역가에게 전달하면 번역가는 그 안의 원본 메세지를 번역한 문자열"
+"을 추가한  **메세지 카탈로그(message catalogs)**  즉 ``.po`` 파일로 변환한다."
 
 #: ../../usage/advanced/intl.rst:49
 msgid ""
-"*gettext* compiles them into a binary format known as **binary catalogs**"
-" through :program:`msgfmt` for efficiency reasons.  If you make these "
-"files discoverable with :confval:`locale_dirs` for your "
-":confval:`language`, Sphinx will pick them up automatically."
+"*gettext* compiles them into a binary format known as **binary catalogs** "
+"through :program:`msgfmt` for efficiency reasons.  If you make these files "
+"discoverable with :confval:`locale_dirs` for your :confval:`language`, Sphinx "
+"will pick them up automatically."
 msgstr ""
+"*gettext*\\ 는 작업 효율성을 위해 :program:`msgfmt`\\ 를 사용해서 파일들을 바"
+"이너리 카탈로그라고 알려진 바이너리 포맷으로 컴파일한다. 만약 이 파일들을 :"
+"confval:`language`\\ 를 위해 :confval:`locale_dirs`\\ 로 검색 가능하게 하면 "
+"Sphinx가 자동적으로 문자열을 고른다."
 
 #: ../../usage/advanced/intl.rst:54
 msgid ""
-"An example: you have a document ``usage.rst`` in your Sphinx project.  "
-"The *gettext* builder will put its messages into ``usage.pot``.  Imagine "
-"you have Spanish translations [2]_ stored in ``usage.po`` --- for your "
-"builds to be translated you need to follow these instructions:"
+"An example: you have a document ``usage.rst`` in your Sphinx project.  The "
+"*gettext* builder will put its messages into ``usage.pot``.  Imagine you have "
+"Spanish translations [2]_ stored in ``usage.po`` --- for your builds to be "
+"translated you need to follow these instructions:"
 msgstr ""
+"예: Sphinx 프로젝트에 ``usage.rst`` 문서가 있으면 gettext 빌더는 그 문서의 메"
+"세지를 ``usage.pot``\\ 에 넣을 것이다. ``usage.po``\\ 에 스페인어 번역 [2]_ 내"
+"용을 추가하였다고 상상해보자. 당신의 빌드가 번역되기 위해서는 아래의 지시 사항"
+"을 따라야 한다:"
 
 #: ../../usage/advanced/intl.rst:59
 msgid ""
-"Compile your message catalog to a locale directory, say ``locale``, so it"
-" ends up in ``./locale/es/LC_MESSAGES/usage.mo`` in your source directory"
-" (where ``es`` is the language code for Spanish.) ::"
+"Compile your message catalog to a locale directory, say ``locale``, so it "
+"ends up in ``./locale/es/LC_MESSAGES/usage.mo`` in your source directory "
+"(where ``es`` is the language code for Spanish.) ::"
 msgstr ""
+"메세지 카탈로그를 예를 들어 ``locale``\\ 이라는 로케일(locale) 디렉토리로 컴파"
+"일한다. 그러면``./locale/es/LC_MESSAGES/usage.mo`` 디렉토리로 출력한다. "
+"(``es``\\ 는 스페인어의 언어 코드다.)"
 
 #: ../../usage/advanced/intl.rst:65
 msgid "Set :confval:`locale_dirs` to ``[\"locale/\"]``."
-msgstr ""
+msgstr ":confval:`locale_dirs`\\ 를  ``[“locale/“]``\\ 로 설정한다."
 
 #: ../../usage/advanced/intl.rst:66
 msgid ""
 "Set :confval:`language` to ``es`` (also possible via :option:`-D <sphinx-"
 "build -D>`)."
 msgstr ""
+"(:option:`-D <sphinx-build -D>`\\ 를 통해) :confval:`language`\\ 를 ``es``\\ "
+"로 설정한다."
 
 #: ../../usage/advanced/intl.rst:68
 msgid "Run your desired build."
-msgstr ""
+msgstr "원하는 빌드를 실행한다."
 
 #: ../../usage/advanced/intl.rst:72
 msgid "Translating with sphinx-intl"
-msgstr ""
+msgstr "sphinx-intl를 사용한 번역"
 
 #: ../../usage/advanced/intl.rst:75
 msgid "Quick guide"
-msgstr ""
+msgstr "초간단 안내서"
 
 #: ../../usage/advanced/intl.rst:77
 msgid ""
-"`sphinx-intl`_ is a useful tool to work with Sphinx translation flow.  "
-"This section describe an easy way to translate with *sphinx-intl*."
+"`sphinx-intl`_ is a useful tool to work with Sphinx translation flow.  This "
+"section describe an easy way to translate with *sphinx-intl*."
 msgstr ""
+"`sphinx-intl`_ 는 스핑크스 번역 작업흐름을 다루는 유용한 도구다. 이 섹션은 "
+"sphix-intl로 번역하는 쉬운 방법을 설명한다."
 
 #: ../../usage/advanced/intl.rst:80
 msgid "Install `sphinx-intl`_."
-msgstr ""
+msgstr "`sphinx-intl`_ 설치"
 
 #: ../../usage/advanced/intl.rst:86
 msgid "Add configurations to ``conf.py``."
-msgstr ""
+msgstr "``conf.py`` 파일에 설정 추가."
 
 #: ../../usage/advanced/intl.rst:93
 msgid ""
-"This case-study assumes that :confval:`locale_dirs` is set to ``locale/``"
-" and :confval:`gettext_compact` is set to ``False`` (the Sphinx document "
-"is already configured as such)."
+"This case-study assumes that :confval:`locale_dirs` is set to ``locale/`` "
+"and :confval:`gettext_compact` is set to ``False`` (the Sphinx document is "
+"already configured as such)."
 msgstr ""
+"이 예제에서는 :confval:`locale_dirs`\\ 를 ``locale/``\\ 라고 설정하고 :"
+"confval:`gettext_compact`\\ 는 ``False``\\ 로 설정한다. (Sphinx 문서가 이렇게 "
+"되어 있다)."
 
 #: ../../usage/advanced/intl.rst:97
 msgid "Extract translatable messages into pot files."
-msgstr ""
+msgstr "번역 가능한 메제세를 pot 파일로 추출한다."
 
 #: ../../usage/advanced/intl.rst:103
 msgid ""
-"The generated pot files will be placed in the ``_build/gettext`` "
-"directory."
-msgstr ""
+"The generated pot files will be placed in the ``_build/gettext`` directory."
+msgstr "pot 파일들이 ``_build/gettext`` 디렉토리 아래에 생성된다."
 
 #: ../../usage/advanced/intl.rst:105
 msgid "Generate po files."
-msgstr ""
+msgstr "po 파일을 생성한다."
 
 #: ../../usage/advanced/intl.rst:107
 msgid "We'll use the pot files generated in the above step."
@@ -168,37 +209,38 @@ msgstr ""
 msgid ""
 "Once completed, the generated po files will be placed in the below "
 "directories:"
-msgstr ""
+msgstr "완료되면 po 파일이 다음 디렉토리에 생성된다.:"
 
 #: ../../usage/advanced/intl.rst:116
 msgid "``./locale/de/LC_MESSAGES/``"
-msgstr ""
+msgstr "``./locale/de/LC_MESSAGES/``"
 
 #: ../../usage/advanced/intl.rst:117
 msgid "``./locale/ja/LC_MESSAGES/``"
-msgstr ""
+msgstr "``./locale/ja/LC_MESSAGES/``"
 
 #: ../../usage/advanced/intl.rst:119
 msgid "Translate po files."
-msgstr ""
+msgstr "po 파일을 번역한다."
 
 #: ../../usage/advanced/intl.rst:121
 msgid ""
 "AS noted above, these are located in the ``./locale/<lang>/LC_MESSAGES`` "
-"directory.  An example of one such file, from Sphinx, ``builders.po``, is"
-" given below."
+"directory.  An example of one such file, from Sphinx, ``builders.po``, is "
+"given below."
 msgstr ""
+"위에서 본 것처럼 이 파일은 ``./locale/<lang>/LC_MESSAGES`` 디렉토리에 있다. 예"
+"를 들어 Sphinx에서는 ``builders.po``\\ 이라는 파일이 다음처럼 생성된다."
 
 #: ../../usage/advanced/intl.rst:132
 msgid ""
-"Another case, msgid is multi-line text and contains reStructuredText "
-"syntax:"
+"Another case, msgid is multi-line text and contains reStructuredText syntax:"
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:145
 msgid ""
-"Please be careful not to break reST notation.  Most po-editors will help "
-"you with that."
+"Please be careful not to break reST notation.  Most po-editors will help you "
+"with that."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:148
@@ -225,20 +267,20 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:173
 msgid ""
-"Congratulations! You got the translated documentation in the "
-"``_build/html`` directory."
+"Congratulations! You got the translated documentation in the ``_build/html`` "
+"directory."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:178
 msgid ""
-":program:`sphinx-build` that is invoked by make command will build po "
-"files into mo files."
+":program:`sphinx-build` that is invoked by make command will build po files "
+"into mo files."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:181
 msgid ""
-"If you are using 1.2.x or earlier, please invoke :command:`sphinx-intl "
-"build` command before :command:`make` command."
+"If you are using 1.2.x or earlier, please invoke :command:`sphinx-intl build` "
+"command before :command:`make` command."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:185
@@ -251,10 +293,9 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:190
 msgid ""
-"If a document is updated, it is necessary to generate updated pot files "
-"and to apply differences to translated po files.  In order to apply the "
-"updates from a pot file to the po file, use the :command:`sphinx-intl "
-"update` command."
+"If a document is updated, it is necessary to generate updated pot files and "
+"to apply differences to translated po files.  In order to apply the updates "
+"from a pot file to the po file, use the :command:`sphinx-intl update` command."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:200
@@ -263,9 +304,9 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:202
 msgid ""
-"Transifex_ is one of several services that allow collaborative "
-"translation via a web interface.  It has a nifty Python-based command "
-"line client that makes it easy to fetch and push translations."
+"Transifex_ is one of several services that allow collaborative translation "
+"via a web interface.  It has a nifty Python-based command line client that "
+"makes it easy to fetch and push translations."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:209
@@ -286,9 +327,9 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:221
 msgid ""
-"Currently, transifex does not allow for a translation project to have "
-"more than one version of the document, so you'd better include a version "
-"number in your project name."
+"Currently, transifex does not allow for a translation project to have more "
+"than one version of the document, so you'd better include a version number in "
+"your project name."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:225
@@ -317,8 +358,8 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:232
 msgid ""
-"This process will create ``.tx/config`` in the current directory, as well"
-" as a ``~/.transifexrc`` file that includes auth information."
+"This process will create ``.tx/config`` in the current directory, as well as "
+"a ``~/.transifexrc`` file that includes auth information."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:246
@@ -343,8 +384,8 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:273
 msgid ""
-"Get translated catalogs and build mo files. For example, to build mo "
-"files for German (de):"
+"Get translated catalogs and build mo files. For example, to build mo files "
+"for German (de):"
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:285
@@ -361,15 +402,15 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:295
 msgid ""
-"If you want to push all language's po files, you can be done by using "
-":command:`tx push -t` command.  Watch out! This operation overwrites "
+"If you want to push all language's po files, you can be done by using :"
+"command:`tx push -t` command.  Watch out! This operation overwrites "
 "translations in transifex."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:299
 msgid ""
-"In other words, if you have updated each in the service and local po "
-"files, it would take much time and effort to integrate them."
+"In other words, if you have updated each in the service and local po files, "
+"it would take much time and effort to integrate them."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:304
@@ -378,8 +419,8 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:306
 msgid ""
-"The recommended way for new contributors to translate Sphinx reference is"
-" to join the translation team on Transifex."
+"The recommended way for new contributors to translate Sphinx reference is to "
+"join the translation team on Transifex."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:309
@@ -412,12 +453,10 @@ msgstr ""
 
 #: ../../usage/advanced/intl.rst:319
 msgid ""
-"See the `GNU gettext utilities "
-"<https://www.gnu.org/software/gettext/manual/gettext.html#Introduction>`_"
-" for details on that software suite."
+"See the `GNU gettext utilities <https://www.gnu.org/software/gettext/manual/"
+"gettext.html#Introduction>`_ for details on that software suite."
 msgstr ""
 
 #: ../../usage/advanced/intl.rst:322
 msgid "Because nobody expects the Spanish Inquisition!"
 msgstr ""
-

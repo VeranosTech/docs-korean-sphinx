@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the Sphinx package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx 1.8.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 15:36+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-12-24 15:37+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../extdev/i18n.rst:4
 msgid "i18n API"
@@ -45,9 +47,9 @@ msgstr ""
 
 #: of sphinx.locale.get_translation:18
 msgid ""
-"With this code, sphinx searches a message catalog from "
-"``${package_dir}/locales/${language}/LC_MESSAGES/${__name__}.mo`` The "
-":confval:`language` is used for the searching."
+"With this code, sphinx searches a message catalog from ``${package_dir}/"
+"locales/${language}/LC_MESSAGES/${__name__}.mo`` The :confval:`language` "
+"is used for the searching."
 msgstr ""
 
 #: of sphinx.locale._:1
@@ -61,4 +63,3 @@ msgid ""
 "Translation function for console messages This function follows locale "
 "setting (`LC_ALL`, `LC_MESSAGES` and so on)."
 msgstr ""
-
