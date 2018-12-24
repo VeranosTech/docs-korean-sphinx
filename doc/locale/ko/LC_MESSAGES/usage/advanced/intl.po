@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Sphinx 1.8.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 15:36+0900\n"
-"PO-Revision-Date: 2018-12-24 16:15+0900\n"
+"PO-Revision-Date: 2018-12-24 16:30+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,8 +125,7 @@ msgid ""
 msgstr ""
 "예: Sphinx 프로젝트에 ``usage.rst`` 문서가 있으면 gettext 빌더는 그 문서의 메"
 "세지를 ``usage.pot``\\ 에 넣을 것이다. ``usage.po``\\ 에 스페인어 번역 [2]_ 내"
-"용을 추가하였다고 상상해보자. 당신의 빌드가 번역되기 위해서는 아래의 지시 사항"
-"을 따라야 한다:"
+"용을 추가하였다고 하자. 번역문을 빌드하려면다음 지시 사항을 따른다:"
 
 #: ../../usage/advanced/intl.rst:59
 msgid ""
@@ -134,9 +133,9 @@ msgid ""
 "ends up in ``./locale/es/LC_MESSAGES/usage.mo`` in your source directory "
 "(where ``es`` is the language code for Spanish.) ::"
 msgstr ""
-"메세지 카탈로그를 예를 들어 ``locale``\\ 이라는 로케일(locale) 디렉토리로 컴파"
-"일한다. 그러면``./locale/es/LC_MESSAGES/usage.mo`` 디렉토리로 출력한다. "
-"(``es``\\ 는 스페인어의 언어 코드다.)"
+"메세지 카탈로그를  ``locale``\\ 이라는 로케일(locale) 디렉토리로 컴파일한다. "
+"실제로는 ``./locale/es/LC_MESSAGES/usage.mo`` 디렉토리로 출력된다.(``es``\\ "
+"는 스페인어의 언어 코드다.)"
 
 #: ../../usage/advanced/intl.rst:65
 msgid "Set :confval:`locale_dirs` to ``[\"locale/\"]``."
@@ -147,7 +146,7 @@ msgid ""
 "Set :confval:`language` to ``es`` (also possible via :option:`-D <sphinx-"
 "build -D>`)."
 msgstr ""
-"(:option:`-D <sphinx-build -D>`\\ 를 통해) :confval:`language`\\ 를 ``es``\\ "
+"(:option:`-D <sphinx-build -D>` 옵션으로) :confval:`language`\\ 를 ``es``\\ "
 "로 설정한다."
 
 #: ../../usage/advanced/intl.rst:68
@@ -235,53 +234,61 @@ msgstr ""
 #: ../../usage/advanced/intl.rst:132
 msgid ""
 "Another case, msgid is multi-line text and contains reStructuredText syntax:"
-msgstr ""
+msgstr "또다른 예로 msgid가 reStructuredText 문법을 포함하는  텍스트일 수 있다:"
 
 #: ../../usage/advanced/intl.rst:145
 msgid ""
 "Please be careful not to break reST notation.  Most po-editors will help you "
 "with that."
 msgstr ""
+"reST 형식을 위반하지 않도록 주의하라. 대부분의 po 에디터가 reST 형식을 위반하"
+"지 않도록 도와줄 것이다."
 
 #: ../../usage/advanced/intl.rst:148
 msgid "Build translated document."
-msgstr ""
+msgstr "번역 문서를 빌드한다."
 
 #: ../../usage/advanced/intl.rst:150
 msgid ""
 "You need a :confval:`language` parameter in ``conf.py`` or you may also "
 "specify the parameter on the command line."
 msgstr ""
+"``conf.py``에 있는 :confval:`language` 파라미터를 변경하거나 명령줄에서 파라미"
+"터를 지정할 수 있다."
 
 #: ../../usage/advanced/intl.rst:153
 msgid "For for BSD/GNU make, run:"
-msgstr ""
+msgstr "BSD/GNU make에서는 다음 명령을 실행한다:"
 
 #: ../../usage/advanced/intl.rst:159
 msgid "For Windows :command:`cmd.exe`, run:"
-msgstr ""
+msgstr "Windows :command:`cmd.exe`\\ 에서는 다음 명령을 실행한다.:"
 
 #: ../../usage/advanced/intl.rst:166
 msgid "For PowerShell, run:"
-msgstr ""
+msgstr "PowerShell에서는 다음 명령을 실행한다.:"
 
 #: ../../usage/advanced/intl.rst:173
 msgid ""
 "Congratulations! You got the translated documentation in the ``_build/html`` "
 "directory."
-msgstr ""
+msgstr "축하한다! 이제 ``_build/html`` 디렉토리에 번역된 문서를 얻게 되었다."
 
 #: ../../usage/advanced/intl.rst:178
 msgid ""
 ":program:`sphinx-build` that is invoked by make command will build po files "
 "into mo files."
 msgstr ""
+"make 명령으로 호출된 :program:`s phinx-build` 명령은 po 파일을 mo 파일로 빌드"
+"한다."
 
 #: ../../usage/advanced/intl.rst:181
 msgid ""
 "If you are using 1.2.x or earlier, please invoke :command:`sphinx-intl build` "
 "command before :command:`make` command."
 msgstr ""
+"만약 1.2.x 또는 이번의 버전을 사용하면 :command:`make` 명령을 내리기 전에 :"
+"command:`sphinx-intl build` 명령을 실행한다."
 
 #: ../../usage/advanced/intl.rst:185
 msgid "Translating"
