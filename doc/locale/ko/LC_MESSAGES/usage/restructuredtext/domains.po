@@ -416,7 +416,7 @@ msgid ""
 "In current release, all ``var``, ``ivar`` and ``cvar`` are represented as "
 "\"Variable\".  There is no difference at all."
 msgstr ""
-"현재의 배포판에서는 ``var``, `ìvar``, 그리고 ``cvar``는 모두 변수를 지칭하며 "
+"현재의 배포판에서는 ``var``, ``ivar``, 그리고 ``cvar``\ 는 모두 변수를 지칭하며 "
 "어느 것을 사용해도 차이가 없다."
 
 #: ../../usage/restructuredtext/domains.rst:318
@@ -425,7 +425,7 @@ msgid ""
 "for ``returns`` and ``rtype``, which do not need an argument).  This is best "
 "explained by an example::"
 msgstr ""
-"인수가 필요없는 ``returns``와 ``rtype``을 제외한 모든 항목의 이름들은 위의 키"
+"인수가 필요없는 ``returns``와 ``rtype``\ 을 제외한 모든 항목의 이름들은 위의 키"
 "워드 중 하나와 인수로 구성되어야 한다. 다음은 사용 예시이다:"
 
 #: ../../usage/restructuredtext/domains.rst:336
